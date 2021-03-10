@@ -1,0 +1,86 @@
+.conciertos-row-menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+.conciertos-row-contenedor {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 200px;
+  border-radius: 25px;
+  margin: 0.3vw;
+  transition: transform 300ms ease 100ms;
+}
+.conciertos-row-imagen {
+  border-radius: 25px;
+  background-size: 100% 100%;
+  width: 30%;
+  height: 100%;
+  margin: 0;
+}
+.conciertos-row-info {
+  position: relative;
+  height: 100%;
+  padding: 20px;
+}
+.conciertos-row-titulo {
+  display: flex;
+  align-items: center;
+}
+.circulo-rojo {
+  height: 1.5em;
+  width: 1.5em;
+  min-width: 1.5em;
+  background-size: 100% 100%;
+  margin-right: 10px;
+  margin-bottom: 8px;
+}
+.conciertos-row-espectadores {
+  position: absolute;
+  bottom: 20px;
+  /* padding-top: 50%; */
+}
+.conciertos-row-menu:hover .conciertos-row-contenedor {
+  transform: translateY(-2%);
+}
+.conciertos-row-contenedor:hover {
+  cursor: pointer;
+  transform: scale(1.05) !important;
+}
+.conciertos-row-contenedor:hover ~ .conciertos-row-contenedor {
+  transform: translateY(2%);
+}
+@media (max-width: 767px) {
+  .conciertos-row-menu {
+    margin-top: 10px;
+    padding: 0;
+  }
+  .conciertos-row-titulo {
+    align-items: baseline;
+    font-size: 5vw;
+  }
+  .conciertos-row-contenedor {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    border-radius: 5px;
+  }
+  .conciertos-row-imagen {
+    width: auto;
+    padding-right: 50% !important;
+    height: 100%;
+    border-radius: 5px;
+  }
+  .conciertos-row-artistas {
+    display: none;
+  }
+  .conciertos-row-espectadores {
+    display: none;
+  }
+  .circulo-rojo {
+    height: 4vw;
+    width: 4vw;
+    min-width: 4vw;
+  }
+}

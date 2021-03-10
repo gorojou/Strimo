@@ -1,0 +1,220 @@
+.section {
+  position: relative;
+}
+.prueba {
+  position: relative;
+}
+.scroll-right {
+  background: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 255, 255, 0.345) 60%
+    ),
+    linear-gradient(transparent 10%, rgb(255, 255, 255, 0.386) 50%),
+    linear-gradient(to top, transparent 10%, rgb(255, 255, 255, 0.386) 50%);
+
+  border-bottom-left-radius: 100%;
+  border-top-left-radius: 100%;
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  text-align: left;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+  transition: 1s;
+}
+.scroll-right:hover {
+  cursor: pointer;
+  width: 55px;
+  background: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 255, 255, 0.7) 60%
+    ),
+    linear-gradient(transparent 10%, rgb(255, 255, 255, 0.386) 50%),
+    linear-gradient(to top, transparent 10%, rgb(255, 255, 255, 0.386) 50%);
+
+  transition: 1s;
+}
+.scroll-right svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.scroll-left {
+  background: linear-gradient(
+      to left,
+      transparent,
+      rgba(255, 255, 255, 0.345) 60%
+    ),
+    linear-gradient(transparent 10%, rgb(255, 255, 255, 0.386) 50%),
+    linear-gradient(to top, transparent 10%, rgb(255, 255, 255, 0.386) 50%);
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  transition: 1s;
+}
+.scroll-left:hover {
+  cursor: pointer;
+  width: 55px;
+  background: linear-gradient(
+      to left,
+      transparent,
+      rgba(255, 255, 255, 0.7) 60%
+    ),
+    linear-gradient(transparent 10%, rgb(255, 255, 255, 0.386) 50%),
+    linear-gradient(to top, transparent 10%, rgb(255, 255, 255, 0.386) 50%);
+  transition: 1s;
+}
+.scroll-left svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.carousel {
+  z-index: 0;
+  display: flex;
+  padding: 15px;
+  padding-right: 100px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.carousel:hover {
+  transition: 0.5s;
+}
+.item {
+  z-index: 1;
+  min-width: 250px;
+  flex: 0 0 19.7%;
+  text-align: center;
+  margin: 0 2px;
+  height: 100%;
+  border-radius: 10px;
+  transition: transform 300ms ease 100ms;
+}
+.carousel:hover .item {
+  transform: translateX(-5%);
+}
+.item:hover ~ .item {
+  cursor: pointer;
+  transform: translateX(5%);
+}
+.item:hover {
+  cursor: pointer;
+  transform: scale(1.1) !important;
+}
+.espacio {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-size: 100% 100%;
+  height: 100px;
+}
+.titulo-seccion {
+  color: white;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.titulo {
+  width: 100%;
+  background-color: #f8f8f8;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+}
+.perfil {
+  align-items: center;
+  background-color: #f8f8f8;
+  flex: 0 0 19.7%;
+  text-align: center;
+  margin: 0 2px;
+  height: 100%;
+  width: 25vw;
+  min-width: 200px;
+  padding: 12px;
+  border-radius: 10px;
+  transition: transform 300ms ease 100ms;
+}
+.perfil a {
+  color: black;
+  text-decoration: none;
+}
+.carousel:hover .perfil {
+  transform: translateX(-5%);
+}
+.perfil:hover ~ .perfil {
+  cursor: pointer;
+  transform: translateX(5%);
+}
+.perfil:hover {
+  cursor: pointer;
+  transform: scale(1.1) !important;
+}
+.perfil .perfil-i {
+  background-size: 100% 100%;
+  margin-bottom: 2vw !important;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.display1 {
+  z-index: 1;
+  flex: 0 0 19.7%;
+  text-align: center;
+  margin: 0 2px;
+  min-width: 400px;
+  min-height: 200px;
+  display: flex;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  transition: transform 300ms ease 100ms;
+}
+.carousel:hover .display1 {
+  transform: translateX(-5%);
+}
+.display1:hover ~ .display1 {
+  cursor: pointer;
+  transform: translateX(5%);
+}
+.display1:hover {
+  cursor: pointer;
+  transform: scale(1.1) !important;
+}
+.display1 .display1-i {
+  display: flex;
+  background-size: 100% 100%;
+  margin-bottom: 2vw !important;
+  border-radius: 10px;
+  width: 40%;
+  height: 100%;
+  margin-bottom: 0 !important;
+}
+.contenido {
+  position: relative;
+
+  width: 60%;
+  height: 100%;
+  padding-top: 5%;
+}
+.final {
+  padding: 20px;
+}
+.footer-div {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}

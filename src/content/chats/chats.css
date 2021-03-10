@@ -1,0 +1,27 @@
+/* .chat-menu {
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+} */
+.chat-contenedor {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: white;
+  width: 32%;
+  height: 300px;
+  border-radius: 25px;
+  margin: 0.3vw;
+}
+@media (max-width: 767px) {
+  .chat-contenedor {
+    width: 90%;
+  }
+}

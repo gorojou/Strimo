@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../Font/GothamLight.ttf"); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: "Zebulon";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../Font/Zebulon\ Condensed.otf"); /* IE9 Compat Modes */
+}
+body {
+  /* background-color: linear-gradient(#81DEFE, #3E28B1); */
+  font-family: "Gotham";
+}
+html,
+body {
+  margin: 0px;
+  font-family: "Gotham";
+  background-color: #fcfeff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+small {
+  font-family: "Zebulon";
+}
