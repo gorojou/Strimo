@@ -1,5 +1,5 @@
 {
-  "name": "strimo",
+  "name": "livevip",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,7 +7,6 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.6.3",
     "bootstrap": "^4.6.0",
-    "express": "^4.17.1",
     "firebase": "^8.2.6",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
